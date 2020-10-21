@@ -1,0 +1,30 @@
+
+#1/usr/bin/env python
+import os
+os.system ("apt-get install figlet"")
+os.system ("clear")
+os.system ("figlet ZeuS PORT TARAMA")
+print("
+ZeuS Port Taramaya Hosgeldiniz.
+1: 1.Basıt Tarama
+2: 2.Orta duzey Tarama
+3: 3.(ZeuS) yuksek duzey Tarama
+
+")
+
+islem numarası = rav_input ("Tarama hangi seviyede olsun önerilen ---ZeuS---")
+if (islem numarasi == "1"):
+			
+			hedefip = rav_input ("Hedef Ip Giriniz: ")	
+os.system ("nmap " + hedefip)
+
+elif (islem numarasi == "2"):
+			hedefip = rav_input ("Hedef Ip Giriniz")
+			os.system ("nmap -sS -sV " + hedefip)
+elif (islem numarasi == "3"):
+			hedefip = rav_input ("Hedef Ip Giriniz")
+			os.system ("nmap -0" + hedefip)
+			
+else:
+			print:("Boyle bir komut yok. Bunlardan birini denemelisin 1, 2, 3")
+			
